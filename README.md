@@ -1,6 +1,9 @@
 ## SQL多表联查训练题
 
-表结构如下：  
+代码规范请遵照[Alibaba SQL代码编码原则和规范](https://www.alibabacloud.com/help/zh/doc-detail/137491.htm)。
+
+
+表结构如下：
 ```
 Student(Sid,Sname,Sage,Ssex) 学生表 sid为key  
 Course(Cid,Cname,Tid) 课程表 cid 为key  
@@ -97,3 +100,5 @@ Teacher(Tid,Tname) 教师表 tid为key
 43. 查询两门以上不及格课程的同学的学号及其平均成绩；
 44. 查询“004”课程分数小于60，按分数降序排列的同学学号和姓名；
 45. 查询“化学课”成绩第11-20名学生学号和姓名（注：不用考虑分数相同的情况）
+
+参考答案请戳[这里](./answers.md)
