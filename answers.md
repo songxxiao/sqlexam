@@ -1,4 +1,5 @@
-## SQL多表联查训练题 参考答案
+这一套多表联结练习题适合刚刚学习SQL语法后，对知识进行巩固。这次发的是带有参考答案的版本，请注意每道题的答案并不是唯一的，答案仅供参考。建议本套题
+
 
 代码规范请遵照[Alibaba SQL代码编码原则和规范](https://www.alibabacloud.com/help/zh/doc-detail/137491.htm)。参考答案遵循MySQL语法。
 
@@ -69,7 +70,7 @@ from
     from SC 
     left join Student 
     group by 1,2,3
-) a where course1 > course2
+) a where course1 > course2;
 ```
 
 5. 查询“003”课程的学生成绩情况，要求输出学生学号，姓名和成绩情况（大于或等于80表示优秀，大于或等于60表示及格，小于60分表示不及格）；
@@ -134,7 +135,6 @@ where sid not in (
     where tname = '张三'
 );
 ```
-
 
 ### Day 4
 
@@ -253,7 +253,7 @@ join
 ) a on a.Cid = sc.Cid
 where s.Sid <> '001'
 group by 1, 2
-having count(distinct sc.Cid) = 1
+having count(distinct sc.Cid) = 1;
 ```
 
 17. 查询和“002”号的同学学习的课程完全相同的其他同学学号和姓名；
